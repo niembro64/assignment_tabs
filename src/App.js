@@ -5,17 +5,16 @@ import Tab from "./components/Tab";
 
 function App() {
   const [group, setGroup] = useState([
-    { title: "t0", content: "c0" },
-    { title: "t1", content: "c1" },
-    { title: "t2", content: "c2" },
-    { title: "t3", content: "c3" },
+    { title: "t0", content: "Ciao" },
+    { title: "t1", content: "Sup" },
+    { title: "t2", content: "Hello There" },
+    { title: "t3", content: "Hola" },
   ]);
   const [bottom, setBottom] = useState("");
 
   const onHover = (content) => {
     // console.log(content);
     setBottom(content);
-
   };
 
   return (

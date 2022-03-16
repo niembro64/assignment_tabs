@@ -30,7 +30,7 @@ const Tab = (props) => {
       style={active ? colorActive : colorPassive}
     >
       <h3>{props.title}</h3>
-      <h3>{props.content}</h3>
+      {/* <h3>{props.content}</h3> */}
     </div>
   );
 };
