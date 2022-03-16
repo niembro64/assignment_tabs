@@ -5,18 +5,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px black solid;
+  border: 1px black solid;
 }
 
 #heading {
   width: 90%;
   display: flex;
-  border: 3px solid black;
+  border: 1px solid black;
 }
 .tab {
   height: 50px;
   flex: 1;
-  border: 3px solid black;
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,8 +25,9 @@
 #main {
   height: 50px;
   width: 90%;
-  border: 6px solid black;
+  border: 1px solid black;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  padding: 20px; 
 }

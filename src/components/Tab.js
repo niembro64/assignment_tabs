@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { render } from "@testing-library/react";
 
 const Tab = (props) => {
+  const [title, setTitle] = useState("");
   const [text, setText] = useState("");
   const [active, setActive] = useState(false);
 
@@ -11,8 +12,17 @@ const Tab = (props) => {
     backgroundColor: "grey",
   };
 
+  const flipColor = () => {
+      setActive(!active);
+  }
+
   return (
-    <div className="tab" style={colorStyle}>
+    <div
+      onMouseEnter={flipColor}
+      onMouseLeave={flipColor}
+      className="tab"
+      style={colorStyle}
+    >
       {active ? "YES" : "NO"}
     </div>
   );
